@@ -1,0 +1,70 @@
+@import url('./normalize.css');
+@import url('./memory.css');
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('./fondo.jpg'); /* mon image de fond */
+  background-size: cover;
+  color: #333;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #007BFF;
+}
+
+nav button {
+  margin-left: 15px;
+}
+
+.explicacion {
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.tablero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.carta {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.carta.oculta {
+  background-color: #007BFF; /* Couleur de la carte cachée */
+}
+
+.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-theme header {
+  background-color: rgba(18, 18, 18, 0.8);
+}
+
+.dark-theme .carta {
+  background-color: #1E1E1E;
+  border-color: #444;
+}

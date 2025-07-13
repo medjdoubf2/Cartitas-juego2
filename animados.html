@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animación</title>
+  <style>
+    @keyframes latir {
+      0%   {transform: scale(1);}
+      50%  {transform: scale(1.2);}
+      100% {transform: scale(1);}
+    }
+
+    @keyframes temblar {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(1deg); }
+      50% { transform: rotate(-1deg); }
+      75% { transform: rotate(1deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    @keyframes explotarConfeti {
+      0%   { opacity: 0; transform: scale(0.5) rotate(0deg); }
+      50%  { opacity: 1; transform: scale(1.2) rotate(180deg); }
+      100% { opacity: 0; transform: scale(0.5) rotate(360deg); }
+    }
+
+    @keyframes flotar {
+      0%   { transform: translateY(0px);}
+      50%  { transform: translateY(-6px);}
+      100% { transform: translateY(0px);}
+    }
+
+
+    .animados {
+      text-align: center;
+      font-size: 60px;
+    }
+
+    .corazon {
+      animation: latir 0.8s ease-in-out ;
+      animation-iteration-count: infinite;
+    }
+
+    .tembloroso {
+      animation: temblar 0.4s ease-in-out;
+      animation-iteration-count: infinite;
+    }
+
+    .confetti {
+      animation: explotarConfeti 4s ease-out;
+      animation-iteration-count: infinite;
+    } 
+
+    .flotador {
+      animation: flotar 2s ease-in-out infinite;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="animados corazon">❤️</div>
+  <div class="animados corazon">🫶🏾</div>
+  <div class="animados tembloroso">🔔</div>
+  <div class="animados confetti">🎉</div>
+  <div class="animados flotador">☁️</div>
+
+</body>
+
+</html>

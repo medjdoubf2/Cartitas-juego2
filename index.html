@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Cartas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('./fondo.webp'); 
+            background-size: cover;
+            color: rgb(48, 230, 200);
+            text-align: center;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .game-container {
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            max-width: 800px;
+        }
+        .card {
+            width: 100px;
+            height: 150px;
+            background-color: rgba(255, 255, 255, 0.8);
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            border-radius: 10px;
+        }
+        footer {
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<h1>Encuentra las Tres Cartas Iguales</h1>
+<div class="game-container" id="game"></div>
+<p id="message"></p>
+
+<footer>
+    <p>Teléfono: 123-456-7890</p>
+    <p>Email: contacto@ejemplo.com</p>
+</footer>
+
+<script src="./juego1.js"></script>
+   
+
+
+</body>
+</html>
